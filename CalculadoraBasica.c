@@ -28,20 +28,23 @@ float division(int, int);
 
 /**
  * @fn Funcion del programa principal
- * @return Entero: Si muestra un valor 0 nuestro programa se esta ejecutando correctamente
+ * @return Entero: Si muestra un valor 0 nuestro programa se esta ejecutando
+ * correctamente
  */
 
-int main(void)
-{
+int main(void) {
 
   system("color F0");
 
   int num1, num2, Suma, Resta, Multi;
   float Divi;
 
-  mostrarInstrucciones("Irving Alejandro", "Programa que muestra realiza operaciones basicas como \n\t\t suma, resta, divicion y multiplicacion");
+  mostrarInstrucciones("Irving Alejandro",
+                       "Programa que muestra realiza operaciones basicas como "
+                       "\n\t\t suma, resta, divicion y multiplicacion");
 
-  printf("\n\n\tIngresa los dos numeros con los que deceas realizar las operaciones\n\t");
+  printf("\n\n\tIngresa los dos numeros con los que deceas realizar las "
+         "operaciones\n\t");
   scanf("%d %d", &num1, &num2);
   system("clear");
 
@@ -61,8 +64,7 @@ int main(void)
  *@fn Procedimientos Muestra las instrucciones del programa.
  */
 
-void mostrarInstrucciones(char autores[], char instrucciones[])
-{
+void mostrarInstrucciones(char autores[], char instrucciones[]) {
 
   system("clear");
 
@@ -83,12 +85,10 @@ void mostrarInstrucciones(char autores[], char instrucciones[])
  *@fn Procedimiento para limpiar el buffer de entrada
  */
 
-void limpiarEntradaDatos(void)
-{
+void limpiarEntradaDatos(void) {
   int limpiar;
 
-  while ((limpiar = getchar()) != '\n' && limpiar != EOF)
-  {
+  while ((limpiar = getchar()) != '\n' && limpiar != EOF) {
   }
 
   return;
@@ -99,8 +99,7 @@ void limpiarEntradaDatos(void)
  *@param num1 y num2.
  */
 
-int suma(int num1, int num2)
-{
+int suma(int num1, int num2) {
   int sumaR;
 
   sumaR = num1 + num2;
@@ -113,8 +112,7 @@ int suma(int num1, int num2)
  *@param num1 y num2.
  */
 
-int resta(int num1, int num2)
-{
+int resta(int num1, int num2) {
   int restaR;
 
   restaR = num1 - num2;
@@ -127,8 +125,7 @@ int resta(int num1, int num2)
  *@param num1 y num2.
  */
 
-int multiplicacion(int num1, int num2)
-{
+int multiplicacion(int num1, int num2) {
   int multiplicacionR;
 
   multiplicacionR = num1 * num2;
@@ -141,8 +138,7 @@ int multiplicacion(int num1, int num2)
  *@param num1 y num2.
  */
 
-float division(int num1, int num2)
-{
+float division(int num1, int num2) {
   float divisionR;
 
   divisionR = num1 / num2;
